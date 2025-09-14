@@ -1,0 +1,114 @@
+/* =========================
+   Global Styles
+   ========================= */
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+  color: #222;
+}
+
+.page-container {
+  padding-left: 16px;
+  padding-right: 16px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+h2, h3 {
+  margin-top: 16px;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+a {
+  color: #0645ad;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+ul {
+  list-style: disc;
+  margin-left: 20px;
+  padding-left: 0;
+}
+
+/* =========================
+   Homepage Table Layout
+   ========================= */
+table {
+  border-collapse: collapse;
+  width: 100%;
+  max-width: 1200px;
+}
+
+td {
+  vertical-align: top;
+  padding: 8px;
+}
+
+.photo-cell {
+  width: 230px;
+}
+
+.info-cell {
+  width: 800px;
+}
+
+h2 {
+  margin-top: 0;
+}
+
+/* =========================
+   Art Tools Page Styles
+   ========================= */
+.back-link {
+  margin-bottom: 12px;
+  display: inline-block;
+}
+
+.table-container {
+  width: 100%;
+  overflow-x: auto; /* enable horizontal scroll on mobile */
+}
+
+.table-container table {
+  border-collapse: collapse;
+  width: 100%;
+  min-width: 600px; /* prevent table from shrinking too much */
+}
+
+.table-container td,
+.table-container th {
+  padding: 6px 10px;
+  border: 1px solid #ccc;
+  vertical-align: top;
+  text-align: left;
+}
+
+.table-container th {
+  background-color: #f0f0f0;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+/* =========================
+   Responsive Adjustments
+   ========================= */
+@media screen and (max-width: 768px) {
+  body {
+    font-size: 14px;
+  }
+  td, th {
+    padding: 8px;
+  }
+  h2 {
+    font-size: 20px;
+  }
+  .info-cell {
+    width: auto;
+  }
+}
