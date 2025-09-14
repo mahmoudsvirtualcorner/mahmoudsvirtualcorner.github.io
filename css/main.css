@@ -101,18 +101,6 @@ h2 {
   border-collapse: collapse;
 }
 
-.responsive-img {
-  max-width: 100%;
-  height: auto;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  margin: 8px 0;
-}
-
-.responsive-img.small {
-  max-width: 150px;
-  margin: 4px;
-}
 
 .responsive-iframe {
   width: 100%;
@@ -169,3 +157,17 @@ h2 {
   height: 100%;
 }
 
+
+/* Specific limit for large screenshots */
+.responsive-img {
+  max-width: 90%;   /* keeps images within the page width */
+  height: auto;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin: 8px 0;
+}
+
+.responsive-img.small {
+  max-width: 180px;  /* thumbnails */
+  margin: 4px;
+}
