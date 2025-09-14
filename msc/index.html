@@ -1,266 +1,91 @@
-
 <!DOCTYPE html>
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-body {
-  margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-div {
-  text-align: justify;
-  text-justify: inter-word;
-}
-
-.topnav {
-  overflow: hidden;
-  background-color: #ECE6DB;
-}
-
-.topnav a {
-  float: left;
-  color: #F2F2F2;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 22px;
-}
-
-.topnav a:hover {
-  background-color: #E8D6CA;
-  color: #87C3B9;
-}
-
-.topnav a.active {
-  background-color: #E6D4D2;
-  color: #87C3B9;
-}
-/* Generic */
-hr {
-  background-color:white;
-}
-
-hr.s1 {
-  height:3px;
-  border-top:1px solid black;
-  border-bottom:2px solid black;
-}
-</style>
-<title>Mahmoud Zeidan's Homepage</title>
+<title>M.Sc. Thesis – Mahmoud Zeidan</title>
+<link rel="stylesheet" href="../css/main.css">
 </head>
 <body>
 
-<div class="topnav">
-  <a class="active" href="https://mahmoudsvirtualcorner.github.io/">Home</a>
-<!--  <a href="#research">Research</a>
-  <a href="#hobbies-zone">Hoppies Zone</a>
-  <a href="#blog">BLog</a>--!>
-</div>
+<div style="padding:16px">
+  <a href="../index.html" class="back-link">← Back to Home</a>
 
-<div style="padding-left:16px">
- <table>
+  <table class="content-table">
+    <tr>
+      <td>
+        <h3>Applying Parallel Processing Approach for Interactive Global Illumination</h3>
+        <p>M. Sc. thesis, Computer Science Department, Faculty of Computer and Information Sciences, Ain-Shams University, Egypt, July 2011.</p>
+        <p><b>Advisors:</b> Prof. Dr. Taymor Nazmy, Prof. Dr. Mohamed H. AbdelAziz, and Dr. Haytham El-Messiry.</p>
+      </td>
+    </tr>
 
-  <tr>
-    <td width="1080"</td>
-  </tr>
+    <tr>
+      <td><h3>Abstract</h3></td>
+    </tr>
+    <tr>
+      <td>
+        <div>
+          One of the ultimate goals of computer graphics is to produce realism in simulated scenes. Global illumination algorithms are based on efficiently simulating the complicated physical details of light transport inside 3D scenes...
+        </div>
+      </td>
+    </tr>
 
+    <tr><td><hr class="s1"></td></tr>
+    <tr><td><h3>Downloads</h3></td></tr>
+    <tr><td><a href="MahmoudZeidanMSC.pdf">Thesis</a> [16 MB]</td></tr>
+    <tr><td><a href="presentation.pptx">Presentation</a> [2 MB]</td></tr>
+    <tr><td><a href="demo.wmv">Demo Video</a> [16 MB]</td></tr>
 
-  <tr>
-   <td><h3>Applying Parallel Processing Approach for Interactive Global Illumination.</h3></td>
-  </tr>
+    <tr><td><hr class="s1"></td></tr>
+    <tr><td><h3>Video</h3></td></tr>
+    <tr>
+      <td align="center">
+        <iframe class="responsive-iframe" src="https://www.youtube.com/embed/mK_SgIAnQ9g?si=g8PA-Z_jGkzhFg1B" title="YouTube video player" allowfullscreen></iframe>
+      </td>
+    </tr>
 
-  <tr>
-    <td>M. Sc. thesis, Computer Science Department, Faculty of Computer and Information Sciences, Ain-Shams University, Egypt, July 2011.</td>
-  </tr>
+    <tr><td><hr class="s1"></td></tr>
+    <tr><td><h3>Screenshots</h3><p><small><i>Click on images to enlarge.</i></small></p></td></tr>
 
-  <tr>
-  <td><b>Advisors:</b>	Prof. Dr. Taymor Nazmy, Prof. Dr. Mohamed H. AbdelAziz, and Dr. Haytham El-Messiry.</td>
-  </tr>
-  <tr>
-<td><h3 >Abstract</h3></td>
-  </tr>
+    <tr>
+      <td align="center">
+        <a href="images/main.png"><img src="images/main.png" alt="Main building blocks of the photon mapping algorithm on GPU" class="responsive-img"></a>
+        <p>Main building blocks of the photon mapping algorithm on GPU</p>
+      </td>
+    </tr>
 
-  <tr><td>
-  <div>		
-One of the ultimate goals of computer graphics is to produce realism in simulated scenes. Global illumination algorithms are based on efficiently simulating the complicated physical details of light transport inside 3D scenes. But such techniques still to some degree miss the interactive and real-time rendering rate due to the complexity of its core algorithms. At the core of most global illumination algorithms is the ray tracing algorithm. However, it was noticed that the main bottleneck of any ray tracing algorithm is ray traversal. So in order to enhance the rendering time we have to target the ray tracing and its core primitives including; hierarchy construction, ray traversal, and shading calculation.  With the new parallel architecture offered by modern graphics hardware we can reformulate global illumination algorithms into efficient and scalable parallel implementations on graphics processing unit (GPU). In this thesis, we develop a parallel Whitted style ray tracer on GPU, and map all the stages of the photon mapping algorithm onto GPU employing recent and efficient parallel algorithm for construing a point based KD-tree.  We introduce a new parallel algorithm for building binned SAH BVH and evaluate the resulting tree hierarchy using parallel ray tracing techniques. We also compare our BVH construction algorithm with recent state of the art KD-tree and BVH construction algorithms on GPU. Our new algorithm for binned SAH BVH construction gives better or comparable rendering performance to recent state of the art hierarchical tree construction algorithms.  Finally, in this thesis we show that most recent parallel tree construction algorithms can be reduced to a small and general set of parallel primitives and can be easily explained with a small set of parallel utilities.					
-  </div>		
-                    </td>
-  </tr>
+    <tr><td><hr></td></tr>
+    <tr>
+      <td align="center">
+        <a href="images/CornellDirectLight.png"><img src="images/CornellDirectLight.png" alt="Cornell Direct Light" class="responsive-img small"></a>
+        <a href="images/CornellGlobalIllumination.png"><img src="images/CornellGlobalIllumination.png" alt="Cornell Global Illumination" class="responsive-img small"></a>
+        <p>Cornell Box Direct Light &nbsp;&nbsp; Cornell Box Global Illumination</p>
+      </td>
+    </tr>
 
-  <tr><td> <hr class="s1"> </td></tr>
-  <tr><td>
-    <h3>Downloads</h3>	
-    </td></tr>
-  <tr><td>
-	<a href="MahmoudZeidanMSC.pdf">Thesis</a> [16 MB]<br/> 
-    </td></tr>
-  <tr><td>
-	<a href="presentation.pptx">Presentation</a> [2 MB]<br/> 						
-    </td></tr>
-  <tr><td>
-	<a href="demo.wmv">Demo video</a> [16 MB]<br/> 
-    </td></tr>
-  <tr><td>
-					
-  <tr><td> <hr class="s1"> </td></tr>
-  <tr><td>
-				<h3>Video</h3>
-    </td></tr>
-  <tr><td>
-				<br/>
-				<table width="100%">
-				<tr>
-				<td align="center">
-<iframe width="560" height="315" src="https://www.youtube.com/embed/mK_SgIAnQ9g?si=g8PA-Z_jGkzhFg1B" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-				</td>
-				</tr>
-						
-				</table>
-    </td></tr>
+    <tr><td><hr></td></tr>
+    <tr>
+      <td align="center">
+        <a href="images/CubeDirectLight.png"><img src="images/CubeDirectLight.png" alt="Cube Direct Light" class="responsive-img small"></a>
+        <a href="images/CubeIrradiance.png"><img src="images/CubeIrradiance.png" alt="Cube Irradiance" class="responsive-img small"></a>
+        <a href="images/CubeRadiance.png"><img src="images/CubeRadiance.png" alt="Cube Radiance" class="responsive-img small"></a>
+        <a href="images/CubeGlobalIllumination.png"><img src="images/CubeGlobalIllumination.png" alt="Cube Global Illumination" class="responsive-img small"></a>
+        <p>Cube Direct Light &nbsp;&nbsp; Cube Irradiance &nbsp;&nbsp; Cube Radiance &nbsp;&nbsp; Cube Global Illumination</p>
+      </td>
+    </tr>
 
-  <tr><td> <hr class="s1"> </td></tr>
-  <tr><td>
-
-				<h3>Screen Shots</h3>	
-                        <p><small><i>Click on images to see enlarge.</i></small></p>
-						</td> </tr>									
-						
-  <tr><td>
-				<table width="100%">
-					<tr >
-						<td align="center" >
-							<A HREF = "images/main.png"><IMG SRC = "images/main.png" alt="Main building blocks of the photon mapping algorithm on GPU" width=600> </A>
-						</td>
-						
-						
-					</tr>
-				
-					<tr >
-						<td align="center" >
-							Main building blocks of the photon mapping algorithm on GPU
-						</td>
-						
-						
-					</tr>				
-				</table>
-
-    </td></tr>
-  <tr><td>
-				
-							
-				<hr>
-    </td></tr>
-  <tr><td>
-				
-				<table width="100%">
-					<tr >
-						<td align="center" >
-							<A HREF = "images/CornellDirectLight.png"><IMG SRC = "images/CornellDirectLight.png" alt="Cornell Direct Light" width=150> </A>
-						</td>
-						<td align="center" >
-							<A HREF = "images/CornellGlobalIllumination.png"><IMG SRC = "images/CornellGlobalIllumination.png" alt="Cornell Global Illumination" width=150> </A>
-						</td>
-						
-					</tr>
-				
-					<tr >
-						<td align="center" >
-							Cornell Box Direct Light
-						</td>
-						<td align="center" >
-							Cornell Box Global Illumination
-						</td>
-						
-					</tr>				
-				</table>
-
-    </td></tr>
-  <tr><td>
-				
-							
-				<hr>
-    </td></tr>
-  <tr><td>
-				
-				<table width="100%">
-					<tr >
-						<td align="center" >
-							<A HREF = "images/CubeDirectLight.png"><IMG SRC = "images/CubeDirectLight.png" alt="Cube Direct Light" width=150> </A>
-						</td>
-						<td align="center" >
-							<A HREF = "images/CubeIrradiance.png"><IMG SRC = "images/CubeIrradiance.png" alt="Cube Irradiance" width=150> </A>
-						</td>
-						<td align="center" >
-							<A HREF = "images/CubeRadiance.png"><IMG SRC = "images/CubeRadiance.png" alt="Cube Radiance" width=150> </A>
-						</td>
-						<td align="center" >
-							<A HREF = "images/CubeGlobalIllumination.png"><IMG SRC = "images/CubeGlobalIllumination.png" alt="Cube Global Illumination" width=150> </A>
-						</td>					
-					</tr>
-				
-					<tr >
-						<td align="center" >
-							Cube Direct Light
-						</td>
-						<td align="center" >
-							Cube Irradiance
-						</td>
-						<td align="center" >
-							Cube Radiance
-						</td>
-						<td align="center" >
-							Cube Global Illumination
-						</td>					
-					</tr>				
-				</table>
-
-    </td></tr>
-  <tr><td>
-				
-				<hr>
-				
-    </td></tr>
-  <tr><td>
-				<table width="100%">
-					<tr >
-						<td align="center" >
-							<A HREF = "images/DragonDirectLight.png"><IMG SRC = "images/DragonDirectLight.png" alt="Dragon Direct Light" width=150> </A>
-						</td>
-						<td align="center" >
-							<A HREF = "images/DragonIrradiance.png"><IMG SRC = "images/DragonIrradiance.png" alt="Dragon Irradiance" width=150> </A>
-						</td>
-						<td align="center" >
-							<A HREF = "images/DragonRadiance.png"><IMG SRC = "images/DragonRadiance.png" alt="Dragon Radiance" width=150> </A>
-						</td>
-						<td align="center" >
-							<A HREF = "images/DragonGlobalIllumination.png"><IMG SRC = "images/DragonGlobalIllumination.png" alt="Dragon Global Illumination" width=150> </A>
-						</td>					
-					</tr>
-				
-					<tr >
-						<td align="center" >
-							Dragon Direct Light
-						</td>
-						<td align="center" >
-							Dragon Irradiance
-						</td>
-						<td align="center" >
-							Dragon Radiance
-						</td>
-						<td align="center" >
-							Dragon Global Illumination
-						</td>					
-					</tr>				
-				</table>
-
-    </td></tr>
-
-  <tr><td> <br /> </td></tr>
-</table> 
+    <tr><td><hr></td></tr>
+    <tr>
+      <td align="center">
+        <a href="images/DragonDirectLight.png"><img src="images/DragonDirectLight.png" alt="Dragon Direct Light" class="responsive-img small"></a>
+        <a href="images/DragonIrradiance.png"><img src="images/DragonIrradiance.png" alt="Dragon Irradiance" class="responsive-img small"></a>
+        <a href="images/DragonRadiance.png"><img src="images/DragonRadiance.png" alt="Dragon Radiance" class="responsive-img small"></a>
+        <a href="images/DragonGlobalIllumination.png"><img src="images/DragonGlobalIllumination.png" alt="Dragon Global Illumination" class="responsive-img small"></a>
+        <p>Dragon Direct Light &nbsp;&nbsp; Dragon Irradiance &nbsp;&nbsp; Dragon Radiance &nbsp;&nbsp; Dragon Global Illumination</p>
+      </td>
+    </tr>
+  </table>
 </div>
 
 </body>
 </html>
-  

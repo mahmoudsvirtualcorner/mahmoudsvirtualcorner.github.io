@@ -64,10 +64,6 @@ h2 {
 /* =========================
    Art Tools Page Styles
    ========================= */
-.back-link {
-  margin-bottom: 12px;
-  display: inline-block;
-}
 
 .table-container {
   width: 100%;
@@ -96,19 +92,63 @@ h2 {
 }
 
 /* =========================
+   Content & Media
+   ========================= */
+.content-table {
+  width: 100%;
+  max-width: 1080px;
+  margin: auto;
+  border-collapse: collapse;
+}
+
+.responsive-img {
+  max-width: 100%;
+  height: auto;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin: 8px 0;
+}
+
+.responsive-img.small {
+  max-width: 150px;
+  margin: 4px;
+}
+
+.responsive-iframe {
+  width: 100%;
+  max-width: 560px;
+  height: 315px;
+  border: none;
+}
+
+/* =========================
    Responsive Adjustments
    ========================= */
 @media screen and (max-width: 768px) {
   body {
     font-size: 14px;
   }
+
   td, th {
     padding: 8px;
   }
+
   h2 {
     font-size: 20px;
   }
+
   .info-cell {
     width: auto;
   }
+}
+
+.back-link {
+  display: block;
+  text-align: left;
+  margin: 16px 0;
+  font-weight: bold;
+  color: #0645ad;
+}
+.back-link:hover {
+  text-decoration: underline;
 }
