@@ -9,8 +9,7 @@ body {
 }
 
 .page-container {
-  padding-left: 16px;
-  padding-right: 16px;
+  padding: 16px;
   max-width: 1200px;
   margin: auto;
 }
@@ -41,7 +40,6 @@ ul {
 table {
   border-collapse: collapse;
   width: 100%;
-  max-width: 1200px;
 }
 
 td {
@@ -123,7 +121,7 @@ h2 {
 
 /* Specific limit for large screenshots */
 .responsive-img {
-  max-width: 90%;   /* keeps images within the page width */
+  max-width: 100%;   /* keeps images within the page width */
   height: auto;
   border: 1px solid #ccc;
   border-radius: 4px;
@@ -163,6 +161,7 @@ h2 {
   font-weight: bold;
   color: #0645ad;
 }
+
 .back-link:hover {
   text-decoration: underline;
 }
@@ -178,3 +177,24 @@ h2 {
   display: inline-block;
 }
 
+/* Table Borders and Overflow */
+.table-container td,
+.table-container th {
+  border: 1px solid #aaa; /* Slightly darker border for better visibility */
+}
+
+.table-container {
+  width: 100%;
+  max-width: 1200px;  /* Limit the table width on large screens */
+  overflow-x: auto;   /* Enables horizontal scrolling on small screens */
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+img {
+  max-width: 100%; /* Ensures images scale down on smaller screens */
+  height: auto;
+}
