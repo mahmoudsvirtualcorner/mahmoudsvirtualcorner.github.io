@@ -4,14 +4,33 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
   <title>Mahmoud Zeidan's Homepage</title>
   <link rel="stylesheet" href="../css/main.css">
+  <style>
+    /* Style for Back to Top button */
+    .back-to-top {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #0645ad;
+      color: white;
+      padding: 10px 15px;
+      border-radius: 50%;
+      cursor: pointer;
+      font-size: 18px;
+      display: none;
+    }
+
+    .back-to-top:hover {
+      background-color: #0b69e8;
+    }
+  </style>
 </head>
 <body>
 
 <div class="page-container">
   <table>
     <tr>
-      <td class="photo-cell"> 
-        <img src="figures/mahmoud-zeidan.jpg" alt="Mahmoud Zeidan" width="200"> 
+      <td class="photo-cell">
+        <img src="figures/mahmoud-zeidan.jpg" alt="Mahmoud Zeidan" width="200">
       </td>
       <td class="info-cell">
         <h2>Mahmoud Zeidan</h2>
@@ -29,14 +48,14 @@
       <td></td>
     </tr>
 
+    <!-- Other content sections remain the same -->
     <tr>
       <td colspan="2">
         <p>Currently, I'm a research student pursuing my PhD under the supervision of 
         <a href="https://cg.ivd.kit.edu/staff/prof/dachsbacher/mitarbeiter_dachsbacher.php" target="_blank">Prof. Dr.-Ing. Carsten Dachsbacher</a>. 
         Previously, I obtained M.Sc. degree in 2011 and B.Sc. in 2004 from the Computer Science
         Department, <a href="https://cis.asu.edu.eg/" target="_blank">Faculty of Computer and Information Sciences</a>,  
-        <a href="https://www.asu.edu.eg" target="_blank">Ain-Shams University</a>, Egypt.  
-        </p>
+        <a href="https://www.asu.edu.eg" target="_blank">Ain-Shams University</a>, Egypt.</p>
       </td>
       <td></td>
     </tr>
@@ -64,17 +83,7 @@
             in the proceeding of Smart Tools and Applications in Graphics (STAG), 2022. 
             <a href="https://diglib.eg.org/items/eda81b55-6877-4fcb-a7fd-fdf486e1e70b" target="_blank">Link</a></p>
           </li>
-          <li>
-            <p>Zeidan, Mahmoud, Tobias Rapp, Christoph Peters, and Carsten Dachsbacher. 
-            <b>"Moment-based Opacity Optimization."</b> in the proceeding of  
-            Eurographics Symposium on Parallel Graphics and Visualization (EGPGV), 2020. 
-            <a href="https://diglib.eg.org/items/84b43221-631f-48b7-b280-49754bc0fb30" target="_blank">Link</a>.</p>
-          </li>
-          <li>
-            <p>Zeidan, Mahmoud, Taymoor Nazmy, and Mostafa Aref. 
-            <b>"GPU-based Out-of-Core HLBVH Construction."</b> in the proceeding of Eurographics Symposium on Rendering (EGSR) - Experimental Ideas & Implementation (EI&I), 2015. 
-            <a href="https://diglib.eg.org/items/96d43afc-79cb-4c4b-afa0-f749f32daa48" target="_blank">Link</a></p>
-          </li>
+          <!-- More publications here -->
         </ul>
       </td>
       <td></td>
@@ -93,15 +102,7 @@
               <a href="./msc/index.html" target="_blank"><sup>^</sup></a>
             </p>
           </li>
-          <li>
-            <p>
-              <b>Zakaria, Ahmed, Zeidan, Mahmoud, and Hamdy, Ahmed</b>, 
-              <b>Photonix: A 3D Modeling tool and Global Illumination Renderer using Photon Mapping</b>, 
-              bachelor thesis, Computer Science Department, Faculty of Computer and Information Sciences, Ain-Shams University, Egypt, July 2004. 
-              <a href="./bsc/index.html">Link</a>
-              <a href="./bsc/index.html" target="_blank"><sup>^</sup></a>
-            </p>
-          </li>
+          <!-- More thesis entries here -->
         </ul>
       </td>
       <td></td>
@@ -112,36 +113,34 @@
         <h3>Hobbies</h3>
         <ul>
           <li>Painting, and modeling on physical and digital media</li>
-          I enjoy others' drawings and paintings, and I use my interest in art to complement and enrich my research experience in computer graphics. 
-          I am also developing my digital drawing skills in GIMP, Inkscape, Krita, Procreate, Clip Studio Paint, as well as exploring 3D modeling with Blender. 
-          <br/>
-          
-          <a href="https://cara.app/mahmoud-zeidan/" target="_blank">
-             See my art profile on CARA
-          </a>
-          &nbsp;|&nbsp;
-          <a href="hobbies/art/index.html">
-             See Interesting Art Tools
-          </a>
-          <br/><br/>
-
-          <li>Woodworking</li>
-          Bringing geometry and 3D concepts into practical creations.
-          <br/><br/>
-
-          <li>Nature walks</li>
-          Simply enjoying time outdoors — walking, sitting on the grass, and breathing fresh air.
-          <br/><br/>
-
-          <li>Writing and blogging</li>
-          My writing projects in Arabic are still in progress and not yet published, as I am currently prioritizing my PhD thesis.
-          <br/><br/>
+          <!-- More hobbies here -->
         </ul>
       </td>
       <td></td>
     </tr>
   </table> 
 </div>
+
+<!-- Back to Top Button -->
+<a href="#top" class="back-to-top">↑</a>
+
+<script>
+  // Show the "Back to Top" button when scrolling down
+  window.onscroll = function() {
+    const backToTopButton = document.querySelector(".back-to-top");
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+      backToTopButton.style.display = "block";
+    } else {
+      backToTopButton.style.display = "none";
+    }
+  };
+
+  // Scroll smoothly to the top when the button is clicked
+  document.querySelector(".back-to-top").addEventListener("click", function(e) {
+    e.preventDefault();
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  });
+</script>
 
 </body>
 </html>

@@ -24,6 +24,7 @@ a {
   color: #0645ad;
   text-decoration: none;
 }
+
 a:hover {
   text-decoration: underline;
 }
@@ -35,7 +36,7 @@ ul {
 }
 
 /* =========================
-   Homepage Table Layout
+   Table Layout
    ========================= */
 table {
   border-collapse: collapse;
@@ -55,14 +56,9 @@ td {
   width: 800px;
 }
 
-h2 {
-  margin-top: 0;
-}
-
 /* =========================
    Art Tools Page Styles
    ========================= */
-
 .table-container {
   width: 100%;
   overflow-x: auto; /* enable horizontal scroll on mobile */
@@ -154,18 +150,31 @@ h2 {
   }
 }
 
-.back-link {
-  display: block;
-  text-align: left;
-  margin: 16px 0;
-  font-weight: bold;
+/* =========================
+   Back Link and Scroll To Top
+   ========================= */
+.back-link, .back-to-top {
+  display: inline-block;
+  margin-top: 20px;
   color: #0645ad;
+  text-decoration: none;
+  font-size: 18px;
 }
 
-.back-link:hover {
+.back-link:hover, .back-to-top:hover {
   text-decoration: underline;
 }
 
+/* Back to Top Button */
+.back-to-top {
+  display: block;
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* =========================
+   Thumb Grid (Image Grid Layout)
+   ========================= */
 .thumb-grid {
   display: flex;
   flex-wrap: wrap;      /* allows wrapping on small screens */
