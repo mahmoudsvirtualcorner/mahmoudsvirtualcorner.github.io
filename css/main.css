@@ -218,3 +218,87 @@ img {
   max-width: 100%; /* Ensures images scale down on smaller screens */
   height: auto;
 }
+
+/* General reset for margins/paddings */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Make sure the body takes full height and sets base font size */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+/* Make sure the page-container takes up full width */
+.page-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Flexbox layout for thesis and publications */
+ul {
+  padding-left: 0;
+  list-style-type: none;
+}
+
+ul li {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+  align-items: center; /* Centers content vertically */
+}
+
+ul li table {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+ul li td {
+  padding-right: 20px;
+}
+
+ul li img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Responsive styling for the publication and thesis sections */
+@media (min-width: 768px) {
+  ul li {
+    flex-direction: row; /* Image and text in a row on wider screens */
+  }
+
+  ul li td {
+    width: 50%;
+    padding-right: 30px;
+  }
+
+  ul li img {
+    width: 300px; /* Fixed image width on larger screens */
+  }
+}
+
+@media (max-width: 768px) {
+  ul li {
+    flex-direction: column; /* Stack the image and text in a column on small screens */
+    align-items: center;
+  }
+
+  ul li td {
+    width: 100%;
+    text-align: center;
+    padding-right: 0;
+    padding-top: 20px;
+  }
+
+  ul li img {
+    width: 80%; /* Resize image to fit on smaller screens */
+  }
+}
