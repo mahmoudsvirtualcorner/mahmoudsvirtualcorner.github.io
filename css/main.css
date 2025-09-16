@@ -197,6 +197,15 @@ td {
   display: inline-block;
 }
 
+/* Limit the thumbnail size on mobile */
+@media screen and (max-width: 768px) {
+  .thumb-grid img {
+    width: 80%;  /* Adjust width for mobile */
+    max-width: 300px;  /* Maximum width for mobile devices */
+    height: auto;  /* Maintain aspect ratio */
+  }
+}
+
 /* Table Borders and Overflow */
 .table-container td,
 .table-container th {
