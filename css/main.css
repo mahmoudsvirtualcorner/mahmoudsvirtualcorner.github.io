@@ -189,3 +189,27 @@ img {
   max-width: 100%;
   height: auto;
 }
+
+/* Only tables that need borders (Art links, Publications, etc.) */
+.bordered-table, .bordered-table th, .bordered-table td {
+  border: 1px solid #ddd;
+  border-collapse: collapse;
+}
+
+.bordered-table th {
+  background-color: #f2f2f2;
+  color: #333;
+}
+
+.bordered-table tr:nth-child(even) {
+  background-color: #fafafa;
+}
+
+.bordered-table tr:hover {
+  background-color: #f1f1f1;
+}
+
+.bordered-table th, .bordered-table td {
+  padding: 8px;
+  text-align: left;
+}
