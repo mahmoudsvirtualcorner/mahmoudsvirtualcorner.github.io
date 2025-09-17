@@ -35,7 +35,7 @@ ul {
 }
 
 /* =========================
-   Table Layout
+   Table Layout (for header part only)
    ========================= */
 table {
   border-collapse: collapse;
@@ -67,7 +67,7 @@ td {
 .pub-item {
   display: flex;
   align-items: flex-start;
-  gap: 12px;
+  gap: 15px;
   margin-bottom: 20px;
 }
 
@@ -76,6 +76,10 @@ td {
   height: auto;
   flex-shrink: 0;
   display: block;
+}
+
+.pub-right {
+  flex: 1;
 }
 
 /* =========================
@@ -107,6 +111,11 @@ td {
   .pub-item img {
     width: 80%;
     max-width: 300px;
+  }
+
+  .pub-right {
+    text-align: left;
+    margin-top: 10px;
   }
 }
 
