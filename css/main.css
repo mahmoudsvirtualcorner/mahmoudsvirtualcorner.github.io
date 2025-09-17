@@ -30,7 +30,6 @@ a:hover {
 }
 
 ul {
-  list-style: disc;
   margin-left: 20px;
   padding-left: 0;
 }
@@ -57,76 +56,26 @@ td {
 }
 
 /* =========================
-   Art Tools Page Styles
+   Publications & Thesis (Flexbox)
    ========================= */
-.table-container {
-  width: 100%;
-  overflow-x: auto; /* enable horizontal scroll on mobile */
+.pub-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
-.table-container table {
-  border-collapse: collapse;
-  width: 100%;
-  min-width: 600px; /* prevent table from shrinking too much */
+.pub-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  margin-bottom: 20px;
 }
 
-.table-container td,
-.table-container th {
-  padding: 6px 10px;
-  border: 1px solid #ccc;
-  vertical-align: top;
-  text-align: left;
-}
-
-.table-container th {
-  background-color: #f0f0f0;
-  position: sticky;
-  top: 0;
-  z-index: 1;
-}
-
-/* =========================
-   Content & Media
-   ========================= */
-.content-table {
-  width: 100%;
-  max-width: 1080px;
-  margin: auto;
-  border-collapse: collapse;
-}
-
-/* Responsive YouTube Video */
-.video-wrapper {
-  position: relative;
-  width: 100%;
-  max-width: 800px;   /* limit maximum size */
-  margin: 20px auto;  /* center horizontally */
-  padding-bottom: 56.25%; /* keep 16:9 ratio */
-  height: 0;
-  overflow: hidden;
-}
-
-.video-wrapper iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  border: none;
-}
-
-/* Specific limit for large screenshots */
-.responsive-img {
-  max-width: 100%;   /* keeps images within the page width */
+.pub-item img {
+  width: 240px;
   height: auto;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  margin: 8px 0;
-}
-
-.responsive-img.small {
-  max-width: 180px;  /* thumbnails */
-  margin: 4px;
+  flex-shrink: 0;
+  display: block;
 }
 
 /* =========================
@@ -148,6 +97,17 @@ td {
   .info-cell {
     width: auto;
   }
+
+  .pub-item {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .pub-item img {
+    width: 80%;
+    max-width: 300px;
+  }
 }
 
 /* =========================
@@ -165,7 +125,6 @@ td {
   text-decoration: underline;
 }
 
-/* Back to Top Button */
 .back-to-top {
   position: fixed;
   bottom: 20px;
@@ -184,140 +143,15 @@ td {
 }
 
 /* =========================
-   Thumb Grid (Image Grid Layout)
+   General Reset
    ========================= */
-.thumb-grid {
-  display: flex;
-  flex-wrap: wrap;      /* allows wrapping on small screens */
-  justify-content: center;
-  gap: 8px;             /* space between images */
-}
-
-.thumb-grid a {
-  display: inline-block;
-}
-
-/* Limit the thumbnail size on mobile */
-@media screen and (max-width: 768px) {
-  .thumb-grid img {
-    width: 80%;  /* Adjust width for mobile */
-    max-width: 300px;  /* Maximum width for mobile devices */
-    height: auto;  /* Maintain aspect ratio */
-  }
-}
-
-/* Table Borders and Overflow */
-.table-container td,
-.table-container th {
-  border: 1px solid #aaa; /* Slightly darker border for better visibility */
-}
-
-.table-container {
-  width: 100%;
-  max-width: 1200px;  /* Limit the table width on large screens */
-  overflow-x: auto;   /* Enables horizontal scrolling on small screens */
-}
-
-table {
-  width: 100%;
-  border-collapse: collapse;
-}
-
-img {
-  max-width: 100%; /* Ensures images scale down on smaller screens */
-  height: auto;
-}
-
-/* General reset for margins/paddings */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* Make sure the body takes full height and sets base font size */
-body {
-  font-family: Arial, sans-serif;
-  line-height: 1.6;
-}
-
-/* Make sure the page-container takes up full width */
-.page-container {
-  width: 100%;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 20px;
-}
-
-/* Flexbox layout for thesis and publications */
-ul {
-  padding-left: 0;
-  list-style-type: none;
-}
-
-ul li {
-  display: flex;
-  flex-wrap: wrap;
-  margin-bottom: 20px;
-  align-items: center; /* Centers content vertically */
-}
-
-ul li table {
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-}
-
-ul li td {
-  padding-right: 20px;
-}
-
-ul li img {
+img {
   max-width: 100%;
   height: auto;
-}
-
-/* Responsive styling for the publication and thesis sections */
-@media (min-width: 768px) {
-  ul li {
-    flex-direction: row; /* Image and text in a row on wider screens */
-  }
-
-  ul li td {
-    width: 50%;
-    padding-right: 30px;
-  }
-
-  ul li img {
-    width: 300px; /* Fixed image width on larger screens */
-  }
-}
-
-@media (max-width: 768px) {
-  ul li {
-    flex-direction: column; /* Stack the image and text in a column on small screens */
-    align-items: center;
-  }
-
-  ul li td {
-    width: 100%;
-    text-align: center;
-    padding-right: 0;
-    padding-top: 20px;
-  }
-
-  ul li img {
-    width: 80%; /* Resize image to fit on smaller screens */
-  }
-}
-
-/* Remove padding between thumbnail and text cells in publications/thesis */
-ul li table td {
-  padding: 0 8px 0 0;  /* no top/bottom, only small right padding */
-  vertical-align: top;
-}
-ul li table img {
-  display: block;      /* removes descender whitespace under images */
-  margin: 0;
 }
