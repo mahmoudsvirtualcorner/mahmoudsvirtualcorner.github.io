@@ -35,7 +35,7 @@ ul {
 }
 
 /* =========================
-   Table Styling
+   General Table Styling
    ========================= */
 table {
   border-collapse: collapse;
@@ -48,16 +48,16 @@ th, td {
 }
 
 th {
-  background-color: #f2f2f2; /* header background */
+  background-color: #f2f2f2;
   color: #333;
 }
 
 tr:nth-child(even) {
-  background-color: #fafafa; /* alternating row colors */
+  background-color: #fafafa;
 }
 
 tr:hover {
-  background-color: #f1f1f1; /* hover effect */
+  background-color: #f1f1f1;
 }
 
 /* =========================
@@ -72,24 +72,16 @@ tr:hover {
 }
 
 /* =========================
-   Publications & Thesis Tables
+   Publication / Thesis Tables (Borderless)
    ========================= */
-.pub-table {
-  border-collapse: collapse;
-  width: 100%;
-  margin-bottom: 20px;
-}
-
-.pub-table td {
-  vertical-align: top;
+.pub-table, .pub-table th, .pub-table td {
+  border: none; /* no borders */
   padding: 6px 12px;
 }
 
 .pub-table th {
-  border: 1px solid #ddd;
   background-color: #f2f2f2;
   color: #333;
-  padding: 6px 12px;
 }
 
 .pub-table .thumb-col {
@@ -102,9 +94,29 @@ tr:hover {
   height: auto;
 }
 
-/* Apply borders to all pub-table cells */
-.pub-table, .pub-table th, .pub-table td {
+/* =========================
+   Bordered Tables (Art Links, etc.)
+   ========================= */
+.bordered-table, .bordered-table th, .bordered-table td {
   border: 1px solid #ddd;
+}
+
+.bordered-table th {
+  background-color: #f2f2f2;
+  color: #333;
+}
+
+.bordered-table tr:nth-child(even) {
+  background-color: #fafafa;
+}
+
+.bordered-table tr:hover {
+  background-color: #f1f1f1;
+}
+
+.bordered-table th, .bordered-table td {
+  padding: 8px;
+  text-align: left;
 }
 
 /* =========================
@@ -187,28 +199,4 @@ tr:hover {
 img {
   max-width: 100%;
   height: auto;
-}
-
-/* Only tables that need borders (Art links, Publications, etc.) */
-.bordered-table, .bordered-table th, .bordered-table td {
-  border: 1px solid #ddd;
-  border-collapse: collapse;
-}
-
-.bordered-table th {
-  background-color: #f2f2f2;
-  color: #333;
-}
-
-.bordered-table tr:nth-child(even) {
-  background-color: #fafafa;
-}
-
-.bordered-table tr:hover {
-  background-color: #f1f1f1;
-}
-
-.bordered-table th, .bordered-table td {
-  padding: 8px;
-  text-align: left;
 }
