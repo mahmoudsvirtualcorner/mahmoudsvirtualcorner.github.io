@@ -57,10 +57,10 @@ tr:nth-child(even) {
 }
 
 /* =========================
-   Remove hover effect for homepage tables
+   Remove hover globally for homepage / pub tables
    ========================= */
 table tr:hover {
-  background-color: inherit; /* disable hover by default */
+  background-color: inherit; /* no hover by default */
 }
 
 /* =========================
@@ -78,7 +78,7 @@ table tr:hover {
    Publication / Thesis Tables (Borderless)
    ========================= */
 .pub-table, .pub-table th, .pub-table td {
-  border: none; /* borderless */
+  border: none; /* remove all borders */
   padding: 6px 12px;
 }
 
@@ -114,7 +114,7 @@ table tr:hover {
 }
 
 .bordered-table tr:hover {
-  background-color: #f1f1f1; /* hover effect only for bordered tables */
+  background-color: #f1f1f1; /* hover only for bordered tables */
 }
 
 .bordered-table th, .bordered-table td {
