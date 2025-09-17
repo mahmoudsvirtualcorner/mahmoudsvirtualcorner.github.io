@@ -311,3 +311,13 @@ ul li img {
     width: 80%; /* Resize image to fit on smaller screens */
   }
 }
+
+/* Remove padding between thumbnail and text cells in publications/thesis */
+ul li table td {
+  padding: 0 8px 0 0;  /* no top/bottom, only small right padding */
+  vertical-align: top;
+}
+ul li table img {
+  display: block;      /* removes descender whitespace under images */
+  margin: 0;
+}
