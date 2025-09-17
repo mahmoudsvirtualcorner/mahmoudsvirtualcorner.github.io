@@ -43,7 +43,6 @@ table {
 }
 
 th, td {
-  border: 1px solid #ddd; /* cell borders */
   padding: 8px;
   text-align: left;
 }
