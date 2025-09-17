@@ -40,7 +40,6 @@ ul {
 table {
   border-collapse: collapse;
   width: 100%;
-  border: 1px solid #ddd; /* outer border */
 }
 
 th, td {
