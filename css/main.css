@@ -35,7 +35,7 @@ ul {
 }
 
 /* =========================
-   Table Layout (for header part only)
+   Table Layout (for header part and publications/thesis)
    ========================= */
 table {
   border-collapse: collapse;
@@ -56,30 +56,27 @@ td {
 }
 
 /* =========================
-   Publications & Thesis (Flexbox)
+   Publications & Thesis Tables
    ========================= */
-.pub-list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.pub-item {
-  display: flex;
-  align-items: flex-start;
-  gap: 15px;
+.pub-table {
+  border-collapse: collapse;
+  width: 100%;
   margin-bottom: 20px;
 }
 
-.pub-item img {
-  width: 240px;
-  height: auto;
-  flex-shrink: 0;
-  display: block;
+.pub-table td {
+  vertical-align: top;
+  padding: 6px 12px;
 }
 
-.pub-right {
-  flex: 1;
+.pub-table .thumb-col {
+  width: 250px;
+}
+
+.pub-table img {
+  display: block;
+  max-width: 240px;
+  height: auto;
 }
 
 /* =========================
@@ -102,20 +99,19 @@ td {
     width: auto;
   }
 
-  .pub-item {
-    flex-direction: column;
-    align-items: center;
+  .pub-table .thumb-col {
+    width: 100%;
     text-align: center;
+    padding-bottom: 10px;
   }
 
-  .pub-item img {
-    width: 80%;
-    max-width: 300px;
+  .pub-table td {
+    display: block;
+    width: 100%;
   }
 
-  .pub-right {
-    text-align: left;
-    margin-top: 10px;
+  .pub-table img {
+    max-width: 80%;
   }
 }
 
