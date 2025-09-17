@@ -35,18 +35,36 @@ ul {
 }
 
 /* =========================
-   Table Layout (for header part and publications/thesis)
+   Table Styling
    ========================= */
 table {
   border-collapse: collapse;
   width: 100%;
+  border: 1px solid #ddd; /* outer border */
 }
 
-td {
-  vertical-align: top;
+th, td {
+  border: 1px solid #ddd; /* cell borders */
   padding: 8px;
+  text-align: left;
 }
 
+th {
+  background-color: #f2f2f2; /* header background */
+  color: #333;
+}
+
+tr:nth-child(even) {
+  background-color: #fafafa; /* alternating row colors */
+}
+
+tr:hover {
+  background-color: #f1f1f1; /* hover effect */
+}
+
+/* =========================
+   Photo / Info Cells
+   ========================= */
 .photo-cell {
   width: 230px;
 }
@@ -69,6 +87,13 @@ td {
   padding: 6px 12px;
 }
 
+.pub-table th {
+  border: 1px solid #ddd;
+  background-color: #f2f2f2;
+  color: #333;
+  padding: 6px 12px;
+}
+
 .pub-table .thumb-col {
   width: 250px;
 }
@@ -77,6 +102,11 @@ td {
   display: block;
   max-width: 240px;
   height: auto;
+}
+
+/* Apply borders to all pub-table cells */
+.pub-table, .pub-table th, .pub-table td {
+  border: 1px solid #ddd;
 }
 
 /* =========================
