@@ -203,3 +203,15 @@ img {
   max-width: 100%;
   height: auto;
 }
+
+.video-wrapper {
+  max-width: 640px;   /* maximum width */
+  margin: 0 auto;     /* centers the div horizontally */
+}
+
+.responsive-iframe {
+  width: 100%;        /* fills the wrapper */
+  height: 360px;      /* 16:9 aspect ratio */
+  display: block;     /* ensures proper centering */
+  border: none;
+}
