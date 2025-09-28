@@ -215,3 +215,28 @@ img {
   display: block;     /* ensures proper centering */
   border: none;
 }
+
+.strike { text-decoration: line-through; }
+
+/* Tag styling */
+.tag {
+  display: inline-block;
+  padding: 2px 6px;
+  margin: 2px 2px 2px 0;
+  border-radius: 4px;
+  font-size: 0.85em;
+  font-weight: 500;
+  color: #fff;
+  line-height: 1.4;
+}
+
+/* Specific colors */
+.tag.cg { background-color: #2b7cff; }       /* blue */
+.tag.vis { background-color: #00a676; }      /* green */
+.tag.ani { background-color: #f39c12; }      /* orange */
+.tag.hci { background-color: #8e44ad; }      /* purple */
+.tag.physim { background-color: #c0392b; }   /* red */
+.tag.percp { background-color: #16a085; }    /* teal */
+.tag.geom { background-color: #34495e; }     /* dark gray */
+.tag.rend { background-color: #e67e22; }     /* amber */
+.tag.sim { background-color: #7f8c8d; }      /* grey */
