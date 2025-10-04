@@ -294,3 +294,70 @@ img {
 .download-item a:hover {
   text-decoration: underline;
 }
+
+/* =========================
+   Comparison Grid (Publications)
+   ========================= */
+.comparison-grid {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.comparison-row {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 24px;
+  margin-bottom: 16px;
+}
+
+.comparison-item {
+  flex: 1 1 45%;
+  max-width: 480px;
+}
+
+.comparison-item h4 {
+  margin-bottom: 8px;
+  font-size: 1em;
+  color: #333;
+}
+
+.comparison-item img {
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+}
+
+/* Responsive adjustment */
+@media screen and (max-width: 768px) {
+  .comparison-item {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+}
+
+/* =========================
+   Paper Header (Publication Pages)
+   ========================= */
+.paper-header {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+.paper-header h2 {
+  font-size: 1.8em;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.paper-header p {
+  margin: 4px 0;
+  font-size: 1em;
+  color: #444;
+}
+
+.paper-header i {
+  color: #555;
+}

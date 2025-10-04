@@ -26,16 +26,39 @@
   <a href="../../index.html" class="back-link">← Back to Home</a>
 
   <!-- Title & Authors -->
-  <h2>Moment-Based Opacity Optimization</h2>
-  <p>Mahmoud Zeidan, Tobias Rapp, Christoph Peters, and Carsten Dachsbacher</p>
-  <p><i>Eurographics Symposium on Parallel Graphics and Visualization (EGPGV 2020)</i></p>
+  <header class="paper-header">
+    <h2>Moment-Based Opacity Optimization</h2>
+    <p>Mahmoud Zeidan, Tobias Rapp, Christoph Peters, and Carsten Dachsbacher</p>
+    <p><i>Eurographics Symposium on Parallel Graphics and Visualization (EGPGV 2020)</i></p>
+  </header>
 
-  <!-- Teaser -->
-  <section style="text-align:center;">
-    <img src="teaser.jpg"
-         alt="Moment-Based Opacity Optimization Teaser"
-         class="responsive-img" style="max-width:720px;">
-    <p style="margin-top:8px;">
+  <!-- Comparison Layout -->
+  <section class="comparison-grid">
+    <h3 style="text-align:center;">Eurographics Symposium on Parallel Graphics and Visualization (2020)</h3>
+
+    <div class="comparison-row">
+      <div class="comparison-item">
+        <h4>DOO without filtering</h4>
+        <img src="doo_no_filter.jpg" alt="DOO without filtering" class="responsive-img">
+      </div>
+      <div class="comparison-item">
+        <h4>DOO with object space filtering</h4>
+        <img src="doo_object_filter.jpg" alt="DOO with object space filtering" class="responsive-img">
+      </div>
+    </div>
+
+    <div class="comparison-row">
+      <div class="comparison-item">
+        <h4>MBOO without filtering</h4>
+        <img src="mboo_no_filter.jpg" alt="MBOO without filtering" class="responsive-img">
+      </div>
+      <div class="comparison-item">
+        <h4>MBOO with filtering</h4>
+        <img src="mboo_filter.jpg" alt="MBOO with filtering" class="responsive-img">
+      </div>
+    </div>
+
+    <p style="margin-top:12px; text-align:center;">
       <i>
         The tornado dataset with two different line counts and different methods of filtering for opacity optimization.
         OIT uses A-buffers. Note how screen space filtering removes clutter in a fixed radius around important structures.
@@ -124,10 +147,6 @@
   <!-- Footer Links -->
   <div style="margin-top:20px;">
     <a href="../../index.html" class="back-link">← Back to Home</a>
-  </div>
-
-  <div style="text-align:center; margin-top:20px;">
-    <a href="#top" class="back-to-top">↑ Back to Top</a>
   </div>
 
 </div>
