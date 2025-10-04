@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <title>Versatile Geometric Flow Visualization by Controllable Shape and Volumetric Appearance</title>
+
+  <!-- Open Graph metadata -->
+  <meta property="og:title" content="Flow-Shaping – Versatile Geometric Flow Visualization">
+  <meta property="og:description" content="GPU-based framework for controllable geometry and volumetric flow visualization.">
+  <meta property="og:image" content="https://mahmoudsvirtualcorner.github.io/figures/flow_shaping_thumbnail.jpg">
+  <meta property="og:url" content="https://mahmoudsvirtualcorner.github.io/flow-shaping/index.html">
+  <meta property="og:type" content="website">
+
+  <!-- Favicon -->
+  <link rel="icon" href="https://mahmoudsvirtualcorner.github.io/figures/mahmoud_zeidan.ico" type="image/x-icon">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="../css/main.css">
+</head>
+<body id="top">
+
+<div class="page-container">
+  <!-- Back to Home -->
+  <a href="../../index.html" class="back-link">← Back to Home</a>
+
+  <table class="content-table">
+    <tr>
+      <td>
+        <h2>Versatile Geometric Flow Visualization by Controllable Shape and Volumetric Appearance</h2>
+        <p>Mahmoud Zeidan, Christoph Peters, Tobias Rapp, Carsten Dachsbacher</p>
+        <p><i>Smart Tools and Applications in Graphics (STAG 2022)</i></p>
+      </td>
+
+    </tr>
+
+    <!-- Teaser Image and Caption -->
+    <tr>
+      <td align="center">
+        <img src="https://mahmoudsvirtualcorner.github.io/publications/flow-visualization-2022/teaser.jpg"
+             alt="Flow Visualization Teaser"
+             width="720"
+             class="responsive-img">
+        <p style="margin-top: 8px;">
+          <i>
+            A use case of our framework for flow visualization; the tornado dataset with a circular cross-sectional glyph and several ramps as a longitudinal kernel.
+          </i>
+        </p>
+      </td>
+    </tr>
+    <tr><td><hr></td></tr>
+
+    <tr><td><h3>Abstract</h3></td></tr>
+    <tr>
+      <td>
+        <p>
+          We present a novel visualization technique for geometry-based visualization of vector fields.
+          Our approach generalizes and combines several existing approaches in a flexible framework using
+          a scalable GPU-accelerated implementation. We map characteristic lines to a variety of glyphs.
+          The user can define multiple cross-sectional shapes that will be used for extrusion.
+          Our system interpolates between these shapes as requested, either based on attributes of the
+          vector field and the characteristic lines or using global user-controlled parameters.
+          Thus, a single characteristic line can use different cross-sectional shapes in different parts
+          to aid the visualization of different phenomena. Transitions can be smooth or discrete and we
+          support highlighting of silhouettes. Additionally, we track and visualize the rotation in the
+          vector field and offer full control of the color mapping, the opacity and the radii along the
+          characteristic lines. Texture-based approaches such as 3D line integral convolution (3D LIC)
+          offer another avenue to vector field visualization. In 3D, they typically rely on sparsely placed
+          seed points. We emulate their appearance with our geometry-based approach through an approximation
+          of the volume integral within our glyphs. Combined with fast order-independent transparency,
+          our GPU implementation achieves fast rendering, even at high resolutions, while keeping the
+          memory footprint moderate.
+        </p>
+      </td>
+    </tr>
+
+    <tr><td><hr></td></tr>
+
+    <tr><td><h3>Downloads</h3></td></tr>
+    <tr>
+      <td>
+        <div class="download-grid">
+          <div class="download-item">
+            <a href="https://mahmoudsvirtualcorner.github.io/publications/flow-visualization-2022/stag2025-paper.pdf" target="_blank">
+              <img src="https://mahmoudsvirtualcorner.github.io/publications/icon_pdf.png" alt="PDF Icon">
+              Paper
+            </a>
+          </div>
+    
+          <div class="download-item">
+            <a href="https://diglib.eg.org/handle/10.2312/stag20221259" target="_blank">
+              <img src="https://mahmoudsvirtualcorner.github.io/publications/icon_external.png" alt="External Link Icon">
+              Official Version
+            </a>
+          </div>
+        </div>
+      </td>
+    </tr>
+
+    <tr><td><hr></td></tr>
+
+    <tr><td><h3>BibTeX</h3></td></tr>
+    <tr>
+      <td>
+<pre style="font-size:0.9em; background:#f8f8f8; padding:10px; border-radius:6px; overflow-x:auto;">
+@article{2022_flow_shaping,
+    title = {{Versatile Geometric Flow Visualization by Controllable Shape and Volumetric Appearance}},
+    author = {Zeidan, M. and Peters, C. and Rapp, T. and Dachsbacher, C.},
+    journal = {Smart Tools and Applications in Graphics - Eurographics Italian Chapter Conference},
+    year = {2022},
+    DOI = {10.2312/stag.20221259}
+}
+</pre>
+      </td>
+    </tr>
+
+    <tr><td><hr></td></tr>
+
+  </table>
+
+  <!-- Bottom Links -->
+  <a href="../../index.html" class="back-link">← Back to Home</a>
+  <a href="#top" class="back-to-top" aria-label="Scroll back to top">↑</a>
+</div>
+
+<!-- JS -->
+<script src="../scripts/main.js"></script>
+
+</body>
+</html>
