@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <title>Moment-Based Opacity Optimization</title>
+
+  <!-- Open Graph metadata -->
+  <meta property="og:title" content="Moment-Based Opacity Optimization">
+  <meta property="og:description" content="Real-time opacity optimization based on moment-based reconstruction for geometric visualization.">
+  <meta property="og:image" content="https://mahmoudsvirtualcorner.github.io/publications/mboo-2020/teaser.jpg">
+  <meta property="og:url" content="https://mahmoudsvirtualcorner.github.io/publications/mboo-2020/index.html">
+  <meta property="og:type" content="website">
+
+  <!-- Favicon -->
+  <link rel="icon" href="https://mahmoudsvirtualcorner.github.io/figures/mahmoud_zeidan.ico" type="image/x-icon">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="../../css/main.css">
+  <script src="../../scripts/main.js" defer></script>
+</head>
+
+<body>
+
+<div class="page-container">
+  <a href="../../index.html" class="back-link">← Back to Home</a>
+
+  <!-- Title & Authors -->
+  <h2>Moment-Based Opacity Optimization</h2>
+  <p>Mahmoud Zeidan, Tobias Rapp, Christoph Peters, and Carsten Dachsbacher</p>
+  <p><i>Eurographics Symposium on Parallel Graphics and Visualization (EGPGV 2020)</i></p>
+
+  <!-- Teaser -->
+  <section style="text-align:center;">
+    <img src="https://mahmoudsvirtualcorner.github.io/publications/mboo-2020/teaser.jpg"
+         alt="Moment-Based Opacity Optimization Teaser"
+         class="responsive-img" style="max-width:720px;">
+    <p style="margin-top:8px;">
+      <i>
+        The tornado dataset with two different line counts and different methods of filtering for opacity optimization.
+        OIT uses A-buffers. Note how screen space filtering removes clutter in a fixed radius around important structures.
+      </i>
+    </p>
+  </section>
+
+  <hr>
+
+  <!-- Abstract -->
+  <section>
+    <h3>Abstract</h3>
+    <p>
+      Geometric structures such as points, lines, and surfaces play a vital role in scientific visualization.
+      However, these visualizations frequently suffer from visual clutter that hinders the inspection of
+      important features behind dense but less important features. In the past few years, geometric cluttering
+      and occlusion avoidance has been addressed in scientific visualization with various approaches such as
+      opacity optimization techniques.
+    </p>
+    <p>
+      In this paper, we present a novel approach for opacity optimization based on recent state-of-the-art
+      moment-based techniques for signal reconstruction. In contrast to truncated Fourier series, moment-based
+      reconstructions of feature importance and optical depth along view rays are highly accurate for sparse
+      regions but also plausible for densely covered regions. At the same time, moment-based methods do not
+      suffer from ringing artifacts. Moreover, this representation enables fast evaluation and compact storage,
+      which is crucial for per-pixel optimization especially for large geometric structures.
+    </p>
+    <p>
+      We also present a fast screen space filtering approach for optimized opacities that works directly on
+      moment buffers. This filtering approach is suitable for real-time visualization applications, while
+      providing comparable quality to object space smoothing. Its implementation is independent of the type
+      of geometry such that it is general and easy to integrate. We compare our technique to recent state-of-the-art
+      techniques for opacity optimization and apply it to real and synthetic datasets in various applications.
+    </p>
+  </section>
+
+  <hr>
+
+  <!-- Downloads -->
+  <section>
+    <h3>Downloads</h3>
+    <div class="download-grid">
+      <div class="download-item">
+        <a href="egpgv2020-paper.pdf" target="_blank">
+          <img src="https://mahmoudsvirtualcorner.github.io/publications/icon_pdf.png" alt="PDF Icon">
+          Paper (Open Access)
+        </a>
+      </div>
+
+      <div class="download-item">
+        <a href="https://diglib.eg.org/handle/10.2312/pgv20201072" target="_blank">
+          <img src="https://mahmoudsvirtualcorner.github.io/publications/icon_external.png" alt="External Link Icon">
+          DL Link
+        </a>
+      </div>
+
+      <div class="download-item">
+        <a href="https://www.youtube.com/watch?v=xxxxxxxxxxx" target="_blank">
+          <img src="https://mahmoudsvirtualcorner.github.io/publications/icon_video.png" alt="Video Icon">
+          Presentation (YouTube)
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <hr>
+
+  <!-- BibTeX -->
+  <section>
+    <h3>BibTeX</h3>
+    <pre style="font-size:0.9em; background:#f8f8f8; padding:10px; border-radius:6px; overflow-x:auto;">
+@inproceedings {mboo,
+    booktitle = {Eurographics Symposium on Parallel Graphics and Visualization},
+    editor = {Frey, Steffen and Huang, Jian and Sadlo, Filip},
+    title = {{Moment-Based Opacity Optimization}},
+    author = {Zeidan, Mahmoud and Rapp, Tobias and Peters, Christoph and Dachsbacher, Carsten},
+    year = {2020},
+    publisher = {The Eurographics Association},
+    ISSN = {1727-348X},
+    ISBN = {978-3-03868-107-6},
+    DOI = {10.2312/pgv.20201072}
+}
+    </pre>
+  </section>
+
+  <!-- Footer Links -->
+  <div style="text-align:center; margin-top:20px;">
+    <a href="../../index.html" class="back-link">← Back to Home</a>
+  </div>
+
+  <div style="text-align:center; margin-top:20px;">
+    <a href="#top" class="back-to-top">↑ Back to Top</a>
+  </div>
+
+</div>
+
+</body>
+</html>
