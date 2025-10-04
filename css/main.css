@@ -73,7 +73,9 @@ table tr:hover {
 /* =========================
    Publication / Thesis Tables (Borderless)
    ========================= */
-.pub-table, .pub-table th, .pub-table td {
+.pub-table,
+.pub-table th,
+.pub-table td {
   border: none; /* remove all borders */
   padding: 6px 12px;
 }
@@ -96,7 +98,9 @@ table tr:hover {
 /* =========================
    Bordered Tables (Art Links, etc.)
    ========================= */
-.bordered-table, .bordered-table th, .bordered-table td {
+.bordered-table,
+.bordered-table th,
+.bordered-table td {
   border: 1px solid #ddd;
 }
 
@@ -113,7 +117,8 @@ table tr:hover {
   background-color: #f1f1f1; /* hover only for bordered tables */
 }
 
-.bordered-table th, .bordered-table td {
+.bordered-table th,
+.bordered-table td {
   padding: 8px;
   text-align: left;
 }
@@ -126,7 +131,8 @@ table tr:hover {
     font-size: 14px;
   }
 
-  td, th {
+  td,
+  th {
     padding: 8px;
   }
 
@@ -161,7 +167,8 @@ table tr:hover {
 /* =========================
    Back Link and Scroll To Top
    ========================= */
-.back-link, .back-to-top {
+.back-link,
+.back-to-top {
   display: inline-block;
   margin-top: 20px;
   color: #0645ad;
@@ -169,10 +176,12 @@ table tr:hover {
   font-size: 18px;
 }
 
-.back-link:hover, .back-to-top:hover {
+.back-link:hover,
+.back-to-top:hover {
   text-decoration: underline;
 }
 
+/* Floating Back to Top Button */
 .back-to-top {
   position: fixed;
   bottom: 20px;
@@ -184,6 +193,13 @@ table tr:hover {
   cursor: pointer;
   font-size: 18px;
   display: none;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out; /* smooth fade */
+  z-index: 999; /* stay on top */
+}
+
+.back-to-top[style*="display: block"] {
+  opacity: 1;
 }
 
 .back-to-top:hover {
@@ -216,9 +232,13 @@ img {
   border: none;
 }
 
-.strike { text-decoration: line-through; }
+.strike {
+  text-decoration: line-through;
+}
 
-/* Tag styling */
+/* =========================
+   Tag Styling
+   ========================= */
 .tag {
   display: inline-block;
   padding: 2px 6px;
@@ -230,7 +250,9 @@ img {
   line-height: 1.4;
 }
 
-/* Specific colors */
+/* =========================
+   Specific Tag Colors
+   ========================= */
 .tag.cg { background-color: #2b7cff; }       /* blue */
 .tag.vis { background-color: #00a676; }      /* green */
 .tag.ani { background-color: #f39c12; }      /* orange */
@@ -239,4 +261,36 @@ img {
 .tag.percp { background-color: #16a085; }    /* teal */
 .tag.geom { background-color: #34495e; }     /* dark gray */
 .tag.rend { background-color: #e67e22; }     /* amber */
-.tag.hpc { background-color: #d63031; } /* crimson */
+.tag.hpc { background-color: #d63031; }      /* crimson */
+
+/* =========================
+   Download Grid (Publications)
+   ========================= */
+.download-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  margin-top: 8px;
+}
+
+.download-item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.download-item img {
+  width: 40px;
+  height: auto;
+  vertical-align: middle;
+}
+
+.download-item a {
+  color: #0645ad;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.download-item a:hover {
+  text-decoration: underline;
+}
