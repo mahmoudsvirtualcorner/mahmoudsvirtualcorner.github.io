@@ -37,7 +37,15 @@
     <tr>
       <td>
         <div>
-          One of the ultimate goals of computer graphics is to produce realism in simulated scenes. Global illumination algorithms are based on efficiently simulating the complicated physical details of light transport inside 3D scenes...
+          One of the ultimate goals of computer graphics is to produce realism in simulated scenes. Global illumination algorithms are based on efficiently simulating
+          the complicated physical details of light transport inside 3D scenes. But such techniques still to some degree miss the interactive and real-time rendering rate due to the complexity of its core algorithms. At the core of most global illumination algorithms is the ray tracing algorithm. However, it was noticed that the main bottleneck of any ray tracing algorithm is ray traversal. So in order to enhance the rendering time we have to target the ray tracing and its core primitives including; hierarchy construction, ray traversal, and shading calculation.
+          <br><br>
+          With the new parallel architecture offered by modern graphics hardware we can reformulate global illumination algorithms into efficient and scalable parallel implementations on graphics processing unit (GPU). In this thesis, we develop a parallel Whitted style ray tracer on GPU, and map all the stages of the photon mapping algorithm onto GPU employing recent and efficient parallel algorithm for construing a point based KD-tree.
+          <br><br>
+          We introduce a new parallel algorithm for building binned SAH BVH and evaluate the resulting tree hierarchy using parallel ray tracing techniques. We also compare our BVH construction algorithm with recent state of the art KD-tree and BVH construction algorithms on GPU. Our new algorithm for binned SAH BVH construction gives better or comparable rendering performance to recent state of the art hierarchical tree construction algorithms.
+          <br><br>
+          Finally, in this thesis we show that most recent parallel tree construction algorithms can be reduced to a small and general set of parallel primitives and can be easily
+          explained with a small set of parallel utilities.
         </div>
       </td>
     </tr>
