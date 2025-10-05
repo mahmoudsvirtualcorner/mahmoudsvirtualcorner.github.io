@@ -1,40 +1,42 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Photonix - Bachelor Thesis</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <title>Photonix – Bachelor Thesis</title>
 
   <!-- Open Graph meta for link previews -->
-  <meta property="og:title" content="Photonix - Bachelor Thesis">
+  <meta property="og:title" content="Photonix – Bachelor Thesis">
   <meta property="og:description" content="Photonix: A 3D Modeling Tool and Global Illumination Renderer using Photon Mapping">
-  <meta property="og:image" content="https://mahmoudsvirtualcorner.github.io/bsc/bsc_share_thumbnail.jpg">
+  <meta property="og:image" content="https://mahmoudsvirtualcorner.github.io/bsc/thumbnail.jpg">
   <meta property="og:url" content="https://mahmoudsvirtualcorner.github.io/bsc/index.html">
   <meta property="og:type" content="website">
 
   <!-- Favicon -->
   <link rel="icon" href="https://mahmoudsvirtualcorner.github.io/figures/mahmoud_zeidan.ico" type="image/x-icon">
 
+  <!-- CSS -->
   <link rel="stylesheet" href="../css/main.css">
 </head>
-<body>
 
+<body>
 <div class="page-container">
   <!-- Back to Home Link (Top) -->
   <a href="../index.html" class="back-link">← Back to Home</a>
 
   <table class="content-table">
+
     <!-- Logo -->
     <tr>
-      <td align="center">
+      <td align="center" style="text-align:center;">
         <img src="logo.jpg" alt="Photonix Logo" class="responsive-img" style="max-width:300px;">
       </td>
     </tr>
 
     <!-- Thesis Info -->
     <tr>
-      <td>
+      <td align="center" style="text-align:center;">
         <h3>Photonix: A 3D Modeling Tool and Global Illumination Renderer using Photon Mapping</h3>
-        <p>Bachelor thesis, Computer Science Department, Faculty of Computer and Information Sciences, Ain-Shams University, Egypt, July 2004.</p>
+        <p>Bachelor thesis, Computer Science Department, Faculty of Computer and Information Sciences, Ain Shams University, Egypt, July 2004.</p>
         <p><b>Team:</b> Ahmed Zakaria, Mahmoud Zeidan, Ahmed Hamdy</p>
       </td>
     </tr>
@@ -46,8 +48,18 @@
     <tr>
       <td>
         <div>
-          Rendering is the process in which a two-dimensional image is created by a computer from a description of a three-dimensional world. 
-          Our objective is to combine both hardware and software capabilities and achieve the highest realism in the generated image using a powerful global illumination algorithm, Photon Mapping...
+          Rendering is the process in which a two-dimensional image is created by a computer from a description of a three-dimensional world.
+          <br><br>
+          Our Objective is to combine both Hardware and software capabilities and get highest realism in the generated image using most powerful global illumination algorithm,
+          Photon Mapping.
+          <br><br>
+          Global illumination is based on light transport mechanism in real world. The light transport mechanism can be expressed in terms of Bidirectional Reflectance Distribution Function (BRDF) of each element, and the most common and practical way is dividing the BRDF into specular and diffuse component.
+          <br><br>
+          Mathematically Global illumination is a problem of solving numerical equations concerning with the convergence, converging speed and if it converges to right answer.  The initial value is the given light sources and their characteristics. The energy of the light source is propagated into the geometrical space. The Radiosity and Ray-tracing methods are used to calculate the energy propagation in each iteration step. The BRDF of geometrical element is important to the efficiency of each method. If the BRDF is ideal diffuse, Radiosity method will converge and converge to right answer. However, Ray tracing algorithm works more efficiently in calculating specular reflection, refraction and caustic surfaces, Those Radiosity and Ray-tracing algorithms can be measured in two aspects, the accuracy and efficiency in BRDF simulation and the rendering speed.
+          <br><br>
+          The photon mapping is a new method is used extensively in global illumination to render photorealistic pictures.
+          <br><br>
+          The photon mapping combines the advantages of both radiosity and ray tracing and better than them in terms of the accuracy and efficiency in BRDF simulation and the rendering speed.
         </div>
       </td>
     </tr>
@@ -55,36 +67,74 @@
     <tr><td><hr class="s1"></td></tr>
 
     <!-- Downloads -->
-    <tr><td><h3>Downloads</h3></td></tr>
-    <tr><td><a href="presentation.ppt">Presentation</a></td></tr>
-    <tr><td><a href="documentation.pdf">Documentation</a></td></tr>
-    <tr><td><a href="demo.avi">Demo Video</a> [20 MB]</td></tr>
-    <tr><td><a href="bin.zip">Executable</a> [700 KB]</td></tr>
-    <tr><td><a href="src.zip">Source Code</a> [3.7 MB]</td></tr>
+    <tr>
+      <td>
+        <h3>Downloads</h3>
+        <div class="download-grid" style="margin-top:8px; text-align:center;">
+          <div class="download-item">
+            <a href="presentation.ppt" target="_blank">
+              <img src="https://mahmoudsvirtualcorner.github.io/publications/icon_ppt.png" alt="Presentation Icon">
+              Presentation
+            </a>
+          </div>
+
+          <div class="download-item">
+            <a href="documentation.pdf" target="_blank">
+              <img src="https://mahmoudsvirtualcorner.github.io/publications/icon_pdf.png" alt="PDF Icon">
+              Documentation
+            </a>
+          </div>
+
+          <div class="download-item">
+            <a href="demo.avi" target="_blank">
+              <img src="https://mahmoudsvirtualcorner.github.io/publications/icon_video.png" alt="Video Icon">
+              Demo Video
+            </a>
+            <p>[20&nbsp;MB]</p>
+          </div>
+
+          <div class="download-item">
+            <a href="bin.zip" target="_blank">
+              <img src="https://mahmoudsvirtualcorner.github.io/publications/icon_zip.png" alt="Executable Icon">
+              Executable
+            </a>
+            <p>[700&nbsp;KB]</p>
+          </div>
+
+          <div class="download-item">
+            <a href="src.zip" target="_blank">
+              <img src="https://mahmoudsvirtualcorner.github.io/publications/icon_code.png" alt="Source Code Icon">
+              Source Code
+            </a>
+            <p>[3.7&nbsp;MB]</p>
+          </div>
+        </div>
+      </td>
+    </tr>
 
     <tr><td><hr class="s1"></td></tr>
 
     <!-- Videos -->
     <tr><td><h3>Videos</h3></td></tr>
     <tr>
-      <td align="center">
+      <td align="center" style="text-align:center;">
 
-        <figure class="video-wrapper">
-          <iframe src="https://www.youtube.com/embed/NwolBskHPtE" title="Photonix Material Editor" allowfullscreen></iframe>
+        <figure class="video-wrapper" style="display:inline-block; text-align:center;">
+          <iframe class="responsive-iframe" src="https://www.youtube.com/embed/NwolBskHPtE" title="Photonix Material Editor" allowfullscreen></iframe>
           <figcaption>Photonix Material Editor</figcaption>
         </figure>
 
-        <hr>
+        <hr style="max-width:600px;">
 
-        <figure class="video-wrapper">
-          <iframe src="https://www.youtube.com/embed/Qwt7VgO8OiE" title="Photonix Soft Shadow" allowfullscreen></iframe>
+        <figure class="video-wrapper" style="display:inline-block; text-align:center;">
+          <iframe class="responsive-iframe" src="https://www.youtube.com/embed/Qwt7VgO8OiE" title="Photonix Soft Shadow" allowfullscreen></iframe>
           <figcaption>Photonix Soft Shadow</figcaption>
         </figure>
 
-        <hr>
+        <hr style="max-width:600px;">
 
-        <figure class="video-wrapper">
-          <iframe src="https://www.youtube.com/embed/u9Rc_9eWrmU" title="Rendering" allowfullscreen></iframe>
+        <figure class="video-wrapper" style="display:inline-block; text-align:center;">
+          <iframe class="responsive-iframe" src="https://www.youtube.com/embed/u9Rc_9eWrmU" title="Rendering" allowfullscreen></iframe>
           <figcaption>Rendering</figcaption>
         </figure>
 
@@ -96,24 +146,30 @@
     <!-- Screenshots -->
     <tr><td><h3>Screenshots</h3></td></tr>
     <tr>
-      <td align="center">
+      <td align="center" style="text-align:center;">
 
-        <figure>
-          <a href="ModelingTool.jpg"><img src="ModelingTool.jpg" alt="Photonix Modeling Tool" class="responsive-img"></a>
+        <figure style="display:inline-block; text-align:center;">
+          <a href="ModelingTool.jpg">
+            <img src="ModelingTool.jpg" alt="Photonix Modeling Tool" class="responsive-img" style="max-width:90%;">
+          </a>
           <figcaption>Photonix Modeling Tool</figcaption>
         </figure>
 
-        <hr>
+        <hr style="max-width:600px;">
 
-        <figure>
-          <a href="PhotonixMaterialEditor.jpg"><img src="PhotonixMaterialEditor.jpg" alt="Material Editor" class="responsive-img"></a>
+        <figure style="display:inline-block; text-align:center;">
+          <a href="PhotonixMaterialEditor.jpg">
+            <img src="PhotonixMaterialEditor.jpg" alt="Material Editor" class="responsive-img" style="max-width:90%;">
+          </a>
           <figcaption>Material Editor</figcaption>
         </figure>
 
-        <hr>
+        <hr style="max-width:600px;">
 
-        <figure>
-          <a href="Rendering.jpg"><img src="Rendering.jpg" alt="Photonix Renderer" class="responsive-img"></a>
+        <figure style="display:inline-block; text-align:center;">
+          <a href="Rendering.jpg">
+            <img src="Rendering.jpg" alt="Photonix Renderer" class="responsive-img" style="max-width:90%;">
+          </a>
           <figcaption>Photonix Renderer</figcaption>
         </figure>
 
@@ -121,11 +177,11 @@
     </tr>
   </table>
 
-  <!-- Back to Top Link -->
-  <a href="#top" class="back-to-top">↑ Back to Top</a>
-
-  <!-- Back to Home Link (Bottom) -->
-  <a href="../index.html" class="back-link">← Back to Home</a>
+  <!-- Navigation -->
+  <div style="text-align:center; margin-top:20px;">
+    <a href="#top" class="back-to-top">↑ Back to Top</a><br>
+    <a href="../index.html" class="back-link">← Back to Home</a>
+  </div>
 </div>
 
 </body>
