@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <title>GPU-based Out-of-Core HLBVH Construction</title>
+
+  <!-- Open Graph metadata -->
+  <meta property="og:title" content="GPU-based Out-of-Core HLBVH Construction">
+  <meta property="og:description" content="GPU-based out-of-core HLBVH algorithm for large-scale BVH construction and path tracing.">
+  <meta property="og:image" content="https://mahmoudsvirtualcorner.github.io/publications/gpuoochlbvh/teaser1.jpg">
+  <meta property="og:url" content="https://mahmoudsvirtualcorner.github.io/publications/gpuoochlbvh/index.html">
+  <meta property="og:type" content="website">
+
+  <!-- Favicon -->
+  <link rel="icon" href="https://mahmoudsvirtualcorner.github.io/figures/mahmoud_zeidan.ico" type="image/x-icon">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="../../css/main.css">
+  <script src="../../scripts/main.js" defer></script>
+</head>
+
+<body>
+<div class="page-container">
+  <a href="../../index.html" class="back-link">← Back to Home</a>
+
+  <!-- Title & Authors -->
+  <header class="paper-header" style="text-align:center; margin-bottom:20px;">
+    <h2>GPU-based Out-of-Core HLBVH Construction</h2>
+    <p>Mahmoud Zeidan, Taymoor Nazmy, and Mostafa Aref</p>
+    <p><i>Eurographics Symposium on Rendering – Experimental Ideas &amp; Implementations (2015)</i></p>
+  </header>
+
+  <!-- 1x4 Teaser Grid -->
+  <section class="comparison-grid" style="text-align:center;">
+    <div class="comparison-row" style="display:flex; flex-wrap:nowrap; justify-content:center; gap:10px;">
+      <div class="comparison-item"><img src="buddhadragons.jpg" alt="Buddha-Dragons Scene" class="responsive-img"></div>
+      <div class="comparison-item"><img src="armadillos.jpg" alt="Armadillos Scene" class="responsive-img"></div>
+      <div class="comparison-item"><img src="lucys.jpg" alt="Lucys Scene" class="responsive-img"></div>
+      <div class="comparison-item"><img src="mpibuilding.jpg" alt="MPI Building Scene" class="responsive-img"></div>
+    </div>
+    <p style="margin-top:12px;">
+      <i>Path tracing results for Buddha-Dragons, Armadillos, Lucys, and MPI Building scenes rendered using the proposed GPU-based out-of-core HLBVH framework.</i>
+    </p>
+  </section>
+
+  <hr>
+
+  <!-- Abstract -->
+  <section>
+    <h3>Abstract</h3>
+    <p>
+      Recently the GPU has been used extensively in building indexing structures for moderately complex scenes that
+      fit inside the GPU core. However, only few methods have been developed for constructing indexing structures
+      for massive models larger than GPU memory. In this paper, we present an out-of-core HLBVH algorithm, a new
+      method for constructing spatial hierarchies suitable for massive models that cannot fit into GPU device memory.
+      A key insight of our method is how to bring and process out-of-core data blocks that do not fit into available
+      device memory. Results show that our approach can compete with HLBVH hierarchy builder for large models
+      on CPU. We also demonstrate the value of our algorithms in a GPU-based out-of-core path tracer that brings
+      tree nodes and geometry into GPU core as needed, and efficiently achieve complex global illumination effects
+      for models up to hundred million triangles.
+    </p>
+  </section>
+
+  <hr>
+
+  <!-- Downloads -->
+  <section>
+    <h3>Downloads</h3>
+    <div class="download-grid">
+      <div class="download-item">
+        <a href="gpuoochlbvh-paper.pdf" target="_blank">
+          <img src="https://mahmoudsvirtualcorner.github.io/publications/icon_pdf.png" alt="PDF Icon">
+          Paper
+        </a>
+      </div>
+      <div class="download-item">
+        <a href="https://diglib.eg.org/handle/10.2312/sre.20151165" target="_blank">
+          <img src="https://mahmoudsvirtualcorner.github.io/publications/icon_external.png" alt="External Link Icon">
+          Official Version
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <hr>
+
+  <!-- BibTeX -->
+  <section>
+    <h3>BibTeX</h3>
+<pre style="font-size:0.9em; background:#f8f8f8; padding:10px; border-radius:6px; overflow-x:auto;">
+@inproceedings{zeidan2015,
+booktitle = {Eurographics Symposium on Rendering - Experimental Ideas & Implementations},
+editor = {Lehtinen, Jaakko and Nowrouzezahrai, Derek},
+title = {{GPU-based Out-of-Core HLBVH Construction}},
+author = {Zeidan, Mahmoud and Nazmy, Taymoor and Aref, Mostafa},
+year = {2015},
+publisher = {The Eurographics Association},
+DOI = {10.2312/sre.20151165}
+}
+</pre>
+  </section>
+
+  <div style="margin-top:20px;">
+    <a href="../../index.html" class="back-link">← Back to Home</a>
+  </div>
+</div>
+</body>
+</html>
