@@ -460,3 +460,16 @@ img {
   margin-left: -10px;     /* slight left shift for alignment */
 }
 
+
+/* =========================
+   Adjust Column Widths
+   ========================= */
+.bordered-table th:nth-child(2),
+.bordered-table td:nth-child(2) {
+  width: 40%;
+}
+
+.bordered-table td:nth-child(2) a {
+  word-wrap: break-word;
+  white-space: normal;
+}
