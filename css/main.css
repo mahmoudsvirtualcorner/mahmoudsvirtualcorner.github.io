@@ -466,7 +466,7 @@ img {
    ========================= */
 .bordered-table th:nth-child(2),
 .bordered-table td:nth-child(2) {
-  width: 40%;
+  width: 30%;
 }
 
 .bordered-table td:nth-child(2) a {
