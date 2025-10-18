@@ -484,12 +484,12 @@ img {
 
 #art-tools-page .bordered-table th:nth-child(2),
 #art-tools-page .bordered-table td:nth-child(2) {
-  width: 45%;
+  width: 40%;
 }
 
 #art-tools-page .bordered-table th:nth-child(3),
 #art-tools-page .bordered-table td:nth-child(3) {
-  width: 15%;
+  width: 20%;
 }
 
 #art-tools-page .bordered-table th:nth-child(4),
