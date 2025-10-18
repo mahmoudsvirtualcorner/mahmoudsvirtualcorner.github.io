@@ -473,3 +473,26 @@ img {
   word-wrap: break-word;
   white-space: normal;
 }
+
+/* =========================
+   Art Tools Page – Fixed Column Widths
+   ========================= */
+#art-tools-page .bordered-table th:nth-child(1),
+#art-tools-page .bordered-table td:nth-child(1) {
+  width: 20%;
+}
+
+#art-tools-page .bordered-table th:nth-child(2),
+#art-tools-page .bordered-table td:nth-child(2) {
+  width: 45%;
+}
+
+#art-tools-page .bordered-table th:nth-child(3),
+#art-tools-page .bordered-table td:nth-child(3) {
+  width: 15%;
+}
+
+#art-tools-page .bordered-table th:nth-child(4),
+#art-tools-page .bordered-table td:nth-child(4) {
+  width: 20%;
+}
